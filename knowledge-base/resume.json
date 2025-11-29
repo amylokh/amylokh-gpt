@@ -1,0 +1,50 @@
+[
+  {
+    "id": "resume_summary",
+    "title": "Resume Summary",
+    "source": "resume",
+    "content": "Digital Product Manager with 4.5+ years of experience driving growth and innovation across MedTech, Healthcare, Consumer Internet, and Publishing. Proven success in delivering user-centric digital platforms and GenAI-powered solutions. Skilled at building product roadmaps and delivering measurable business outcomes using agile, user-first principles. Launched Content Coach, a GenAI solution that reduced content creation time by 66% and generated $5Mn in annual savings. Solved 50+ product problems."
+  },
+  {
+    "id": "work_boston_scientific",
+    "title": "Boston Scientific Experience",
+    "source": "resume",
+    "content": "Launched Content Coach, a GenAI-powered content creation tool, delivering $5M annual savings for marketing teams. Prompt-engineered Smart Actions, a custom-GPT, validating marketing compliance, reducing content creation time by 66%. Owned product strategy for a B2B dealer relationship management platform, and increased monthly purchase orders by 20% and improved reporting saving 500+ hours annually. Conducted 20+ stakeholder interviews across engineering, customer care, supply chain, reporting teams; gathered 50+ requirements and customer pain points and delivered a strategic product roadmap adopted by 7+ teams. Gathered data requirements for TheraSphere platform to source it on a data warehouse consolidating 10+ data sources and enabling better downstream reporting. Led the MVP for MyOrders India, enabling a new B2C business model, contributing to an estimated 10% of total monthly orders. Part of Technology Leadership Development Program (TLDP), a product management rotational program aimed at creating future technology business leaders gaining exposure across various business functions and IT teams"
+  },
+  {
+    "id": "work_f1000_taylor_francis",
+    "title": "F1000 (a Taylor & Francis Group Company) Experience",
+    "source": "resume",
+    "content": "Gathered business and product requirements, refined them with cross-functional teams, effectively solving business problems and delivering a robust article publishing platform. Supported the launch of 8 new open research publishing platforms in a year, F1000’s record high releases till 2021. Engineered publishing platforms, reducing overall article submission lead time by 50%, and improving researcher engagement. Executed multiple proof of concepts and translated them into actionable product feature documentation"
+  },
+  {
+    "id": "work_taylor_francis",
+    "title": "Taylor & Francis Experience",
+    "source": "resume",
+    "content": "Built new product, technical and UI/UX features for continuous improvement of the article submission platform. Improved user retention and reduced submission time by over 80% with the Article Transfer feature development. Built a “transfer” feature that automates submission of 100s of articles on a weekly basis. Drove a rapid integration project with F1000Research within a tight 3-month timeframe, enabling seamless article transfer between publishers for authors"
+  },
+  {
+    "id": "work_optum",
+    "title": "Optum Internship",
+    "source": "resume",
+    "content": "Achieved about 90% reduction in testing time by implementing a fully customizable solution for BI Report Testing. Devised easy access to 100,000+ BI Reports by creating personalized user journeys and user-specific product features. Collaborated with designers, engineers, and other stakeholders to develop the BI report testing product"
+  },
+  {
+    "id": "education",
+    "title": "Education",
+    "source": "resume",
+    "content": "MBA, Business Analytics from SCMHRD... B.Tech in Computer Science from VIT University"
+  },
+  {
+    "id": "skills_certifications",
+    "title": "Skills and Certifications",
+    "source": "resume",
+    "content": "Product Strategy, Roadmapping... Angular, SQL, Python..."
+  },
+  {
+    "id": "contact",
+    "title": "Contact",
+    "source": "resume",
+    "content": "Mobile: +919763189806, email: amylokh@gmail.com, Likedin: https://www.linkedin.com/in/amey-lokhande/"
+  }
+]
