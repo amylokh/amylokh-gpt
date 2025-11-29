@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: amylokh-gpt-backend
+    env: node
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    autoDeploy: true
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
