@@ -1,33 +1,95 @@
 import { createClient } from "@supabase/supabase-js";
 import { generateEmbedding } from "./embeddings.js";
 import "dotenv/config";
+import axios from "axios";
 
 const supabase = createClient(
   process.env.SUPABASE_URL,
   process.env.SUPABASE_SERVICE_KEY
 );
 
+// Generate multiple search queries from a single question
+async function expandQuery(question) {
+  const response = await axios.post(
+    "https://api.openai.com/v1/chat/completions",
+    {
+      model: "gpt-4o-mini",
+      messages: [
+        {
+          role: "system",
+          content:
+            "You are a query expansion expert. Generate 3-4 alternative phrasings of the user question to improve search results. Return only the queries, one per line, without numbering.",
+        },
+        {
+          role: "user",
+          content: `Original question: "${question}"\n\nGenerate alternative search queries:`,
+        },
+      ],
+      temperature: 0.7,
+      max_tokens: 150,
+    },
+    {
+      headers: {
+        Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+      },
+    }
+  );
+
+  const expandedQueries = response.data.choices[0].message.content
+    .split("\n")
+    .filter((q) => q.trim().length > 0);
+
+  return [question, ...expandedQueries];
+}
+
+// Retrieve context using multiple query variations
 export async function retrieveContext(question) {
-  const questionEmbedding = await generateEmbedding(question);
+  try {
+    // Step 1: Expand the query
+    const queries = await expandQuery(question);
+    console.log("Expanded queries:", queries);
 
-  const { data, error } = await supabase.rpc("match_documents", {
-    query_embedding: questionEmbedding,
-    match_count: 15, // Retrieve more candidates for re-ranking
-    match_threshold: 0.2,
-  });
+    // Step 2: Retrieve documents for each query
+    const allDocs = [];
+    for (const query of queries) {
+      const queryEmbedding = await generateEmbedding(query);
 
-  if (error) throw error;
+      const { data, error } = await supabase.rpc("match_documents", {
+        query_embedding: queryEmbedding,
+        match_count: 10,
+        match_threshold: 0.2,
+      });
 
-  // Re-ranking: Score documents by semantic relevance + content quality
-  const rankedDocs = data
-    .map((doc) => ({
-      ...doc,
-      relevanceScore: calculateRelevanceScore(doc, question),
-    }))
-    .sort((a, b) => b.relevanceScore - a.relevanceScore)
+      if (error) throw error;
+      allDocs.push(...data);
+    }
+
+    // Step 3: Deduplicate and re-rank
+    const uniqueDocs = deduplicateDocs(allDocs);
+    const rankedDocs = uniqueDocs
+      .map((doc) => ({
+        ...doc,
+        relevanceScore: calculateRelevanceScore(doc, question),
+      }))
+      .sort((a, b) => b.relevanceScore - a.relevanceScore)
     .slice(0, 5); // Keep top 5 after re-ranking
 
-  return rankedDocs;
+    return rankedDocs;
+  } catch (error) {
+    console.error("Error retrieving context:", error);
+    throw error;
+  }
+}
+
+// Remove duplicate documents
+function deduplicateDocs(docs) {
+  const seen = new Set();
+  return docs.filter((doc) => {
+    const id = `${doc.id}-${doc.title}`;
+    if (seen.has(id)) return false;
+    seen.add(id);
+    return true;
+  });
 }
 
 function calculateRelevanceScore(doc, question) {
