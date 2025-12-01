@@ -12,13 +12,16 @@ router.post("/chat", async (req, res) => {
       return res.status(400).json({ error: "Question is required" });
     }
 
-    // Step 1: Retrieve top docs
+    // Step 1: Retrieve and re-rank top docs
     const docs = await retrieveContext(question);
 
-    // Step 2: Combine into a single context string
+    // Step 2: Combine into a single context string with relevance indicators
     const contextText = docs
-  .map(d => `Section: ${d.title}\nSource: ${d.source}\n\n${d.content}`)
-  .join("\n\n---\n\n");
+      .map(
+        (d, i) =>
+          `[Relevance: ${(d.relevanceScore * 100).toFixed(0)}%]\nSection: ${d.title}\nSource: ${d.source}\n\n${d.content}`
+      )
+      .join("\n\n---\n\n");
 
     // Step 3: Generate final answer using GPT-4o Mini
     const answer = await generateAnswer(question, contextText);
