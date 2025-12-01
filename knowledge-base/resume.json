@@ -1,50 +1,191 @@
 [
   {
-    "id": "resume_summary",
-    "title": "Resume Summary",
+    "id": "summary_1",
+    "title": "Resume Summary - Part 1",
     "source": "resume",
-    "content": "Digital Product Manager with 4.5+ years of experience driving growth and innovation across MedTech, Healthcare, Consumer Internet, and Publishing. Proven success in delivering user-centric digital platforms and GenAI-powered solutions. Skilled at building product roadmaps and delivering measurable business outcomes using agile, user-first principles. Launched Content Coach, a GenAI solution that reduced content creation time by 66% and generated $5Mn in annual savings. Solved 50+ product problems."
+    "content": "Digital Product Manager with 4.5+ years of experience driving growth and innovation across MedTech, Healthcare, Consumer Internet, and Publishing."
   },
   {
-    "id": "work_boston_scientific",
-    "title": "Boston Scientific Experience",
+    "id": "summary_2",
+    "title": "Resume Summary - Part 2",
     "source": "resume",
-    "content": "Launched Content Coach, a GenAI-powered content creation tool, delivering $5M annual savings for marketing teams. Prompt-engineered Smart Actions, a custom-GPT, validating marketing compliance, reducing content creation time by 66%. Owned product strategy for a B2B dealer relationship management platform, and increased monthly purchase orders by 20% and improved reporting saving 500+ hours annually. Conducted 20+ stakeholder interviews across engineering, customer care, supply chain, reporting teams; gathered 50+ requirements and customer pain points and delivered a strategic product roadmap adopted by 7+ teams. Gathered data requirements for TheraSphere platform to source it on a data warehouse consolidating 10+ data sources and enabling better downstream reporting. Led the MVP for MyOrders India, enabling a new B2C business model, contributing to an estimated 10% of total monthly orders. Part of Technology Leadership Development Program (TLDP), a product management rotational program aimed at creating future technology business leaders gaining exposure across various business functions and IT teams"
+    "content": "Experienced in building user-centric digital platforms and GenAI-powered solutions. Launched Content Coach, a GenAI solution reducing content creation time by 66% and saving $5M annually."
   },
   {
-    "id": "work_f1000_taylor_francis",
-    "title": "F1000 (a Taylor & Francis Group Company) Experience",
+    "id": "summary_3",
+    "title": "Resume Summary - Part 3",
     "source": "resume",
-    "content": "Gathered business and product requirements, refined them with cross-functional teams, effectively solving business problems and delivering a robust article publishing platform. Supported the launch of 8 new open research publishing platforms in a year, F1000’s record high releases till 2021. Engineered publishing platforms, reducing overall article submission lead time by 50%, and improving researcher engagement. Executed multiple proof of concepts and translated them into actionable product feature documentation"
+    "content": "Skilled in product roadmapping, customer-centric design, and measurable business outcomes. Solved 50+ product problems across multiple industries."
+  },
+
+  {
+    "id": "bsc_1",
+    "title": "Boston Scientific - Content Coach",
+    "source": "resume",
+    "content": "Launched Content Coach, a GenAI-powered content creation tool delivering $5M annual savings for marketing teams."
   },
   {
-    "id": "work_taylor_francis",
-    "title": "Taylor & Francis Experience",
+    "id": "bsc_2",
+    "title": "Boston Scientific - Smart Actions",
     "source": "resume",
-    "content": "Built new product, technical and UI/UX features for continuous improvement of the article submission platform. Improved user retention and reduced submission time by over 80% with the Article Transfer feature development. Built a “transfer” feature that automates submission of 100s of articles on a weekly basis. Drove a rapid integration project with F1000Research within a tight 3-month timeframe, enabling seamless article transfer between publishers for authors"
+    "content": "Prompt-engineered Smart Actions, a custom-GPT validating marketing compliance and reducing content creation time by 66%."
   },
   {
-    "id": "work_optum",
-    "title": "Optum Internship",
+    "id": "bsc_3",
+    "title": "Boston Scientific - Dealer Platform Strategy",
     "source": "resume",
-    "content": "Achieved about 90% reduction in testing time by implementing a fully customizable solution for BI Report Testing. Devised easy access to 100,000+ BI Reports by creating personalized user journeys and user-specific product features. Collaborated with designers, engineers, and other stakeholders to develop the BI report testing product"
+    "content": "Owned product strategy for a B2B dealer relationship management platform, increasing monthly purchase orders by 20% and improving reporting efficiency saving 500+ hours annually."
   },
   {
-    "id": "education",
-    "title": "Education",
+    "id": "bsc_4",
+    "title": "Boston Scientific - Stakeholder Research",
     "source": "resume",
-    "content": "MBA, Business Analytics from SCMHRD... B.Tech in Computer Science from VIT University"
+    "content": "Conducted 20+ stakeholder interviews across engineering, customer care, supply chain, and reporting teams. Gathered 50+ requirements and customer pain points."
   },
   {
-    "id": "skills_certifications",
-    "title": "Skills and Certifications",
+    "id": "bsc_5",
+    "title": "Boston Scientific - Roadmap Delivery",
     "source": "resume",
-    "content": "Product Strategy, Roadmapping... Angular, SQL, Python..."
+    "content": "Delivered a strategic product roadmap adopted by 7+ teams, enabling aligned long-term execution across multiple business functions."
   },
   {
-    "id": "contact",
-    "title": "Contact",
+    "id": "bsc_6",
+    "title": "Boston Scientific - TheraSphere Data",
     "source": "resume",
-    "content": "Mobile: +919763189806, email: amylokh@gmail.com, Likedin: https://www.linkedin.com/in/amey-lokhande/"
+    "content": "Gathered data requirements for the TheraSphere platform to consolidate 10+ data sources into a unified data warehouse improving downstream reporting."
+  },
+  {
+    "id": "bsc_7",
+    "title": "Boston Scientific - MyOrders India",
+    "source": "resume",
+    "content": "Led the MVP for MyOrders India enabling a new B2C business model contributing to an estimated 10% of total monthly orders."
+  },
+  {
+    "id": "bsc_8",
+    "title": "Boston Scientific - TLDP Program",
+    "source": "resume",
+    "content": "Selected for the Technology Leadership Development Program, a rotational product management program developing future tech business leaders."
+  },
+
+  {
+    "id": "f1000_1",
+    "title": "F1000 - Requirements Gathering",
+    "source": "resume",
+    "content": "Gathered business and product requirements; collaborated with cross-functional teams to solve problems and enhance the article publishing platform."
+  },
+  {
+    "id": "f1000_2",
+    "title": "F1000 - Platform Launches",
+    "source": "resume",
+    "content": "Supported the launch of 8 new open research publishing platforms in one year, a record-high for F1000."
+  },
+  {
+    "id": "f1000_3",
+    "title": "F1000 - Platform Engineering",
+    "source": "resume",
+    "content": "Engineered publishing platforms reducing article submission lead time by 50% and improving researcher engagement."
+  },
+  {
+    "id": "f1000_4",
+    "title": "F1000 - Proof of Concepts",
+    "source": "resume",
+    "content": "Executed multiple proof-of-concepts and translated conceptual ideas into actionable product feature documentation."
+  },
+  {
+    "id": "tf_1",
+    "title": "Taylor & Francis - Platform Improvements",
+    "source": "resume",
+    "content": "Built new product, technical, and UI/UX features for continuous improvement of the article submission platform."
+  },
+  {
+    "id": "tf_2",
+    "title": "Taylor & Francis - Retention Improvements",
+    "source": "resume",
+    "content": "Improved user retention and reduced submission time by 80% by developing the Article Transfer feature."
+  },
+  {
+    "id": "tf_3",
+    "title": "Taylor & Francis - Automation Work",
+    "source": "resume",
+    "content": "Developed a feature automating submission of hundreds of articles weekly for seamless cross-publisher transfer."
+  },
+  {
+    "id": "tf_4",
+    "title": "Taylor & Francis - Integration Project",
+    "source": "resume",
+    "content": "Drove a rapid integration project with F1000Research within a tight 3-month timeline enabling seamless article transfer between publishers."
+  },
+
+
+  {
+    "id": "optum_1",
+    "title": "Optum - Report Testing Automation",
+    "source": "resume",
+    "content": "Achieved a 90% reduction in testing time by implementing a fully customizable BI Report Testing solution."
+  },
+  {
+    "id": "optum_2",
+    "title": "Optum - BI Reports Access",
+    "source": "resume",
+    "content": "Enabled easy access to 100,000+ BI reports by creating personalized user journeys and user-specific features."
+  },
+  {
+    "id": "optum_3",
+    "title": "Optum - Team Collaboration",
+    "source": "resume",
+    "content": "Collaborated with designers, engineers, and analysts to build an efficient BI testing product aligned with user needs."
+  },
+
+
+  {
+    "id": "edu_1",
+    "title": "Education - MBA",
+    "source": "resume",
+    "content": "MBA in Business Analytics, SCMHRD (Symbiosis International University), 2024."
+  },
+  {
+    "id": "edu_2",
+    "title": "Education - B.Tech",
+    "source": "resume",
+    "content": "B.Tech in Computer Science and Engineering, VIT University, 2019."
+  },
+
+
+  {
+    "id": "skills_1",
+    "title": "Skills - Product",
+    "source": "resume",
+    "content": "Product Strategy, Roadmapping, Stakeholder Alignment, Product Lifecycle Management, Product Design."
+  },
+  {
+    "id": "skills_2",
+    "title": "Skills - AI & Data",
+    "source": "resume",
+    "content": "GenAI, AI/ML, Custom GPTs, Snowflake, LLMs, RAG, ChatGPT Enterprise, Copilot Enterprise."
+  },
+  {
+    "id": "skills_3",
+    "title": "Skills - Tools",
+    "source": "resume",
+    "content": "Jira, Confluence, Figma, Tableau, Excel, Miro."
+  },
+  {
+    "id": "skills_4",
+    "title": "Skills - Certifications",
+    "source": "resume",
+    "content": "Microsoft AI Product Manager, Copilot Certifications, RSM, RPO, Product Strategy Micro-Certification, Tableau/PowerBI, Foundations of Analytics."
+  },
+  {
+    "id": "skills_5",
+    "title": "Skills - Tech Stack",
+    "source": "resume",
+    "content": "Angular, SQL, Java, Python, REST APIs, AWS, GitHub."
+  },
+
+  {
+    "id": "contact_1",
+    "title": "Contact Information",
+    "source": "resume",
+    "content": "Phone: +91-9763189806, Email: amylokh@gmail.com, LinkedIn: linkedin.com/in/amey-lokhande/"
   }
 ]
